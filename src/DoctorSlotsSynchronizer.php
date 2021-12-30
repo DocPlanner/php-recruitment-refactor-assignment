@@ -142,9 +142,9 @@ class DoctorSlotsSynchronizer
             $entity = $this->slots->findOneBy(['doctorId' => $id, 'start' => $start])
                 ?: new Slot($id, $start, $end);
 
-            $entity->tryUpdateEnd($end);
-
-            yield $entity;
+            if (false === $entity->isStale()) {
+                yield $entity->setEnd($end);
+            }
         }
     }
 

@@ -37,13 +37,14 @@ final class Slot
     /**
      * @ORM\Column(type="datetime")
      */
-    private DateTime $updatedAt;
+    private DateTime $createdAt;
 
     public function __construct(int $doctorId, DateTime $start, DateTime $end)
     {
         $this->doctorId = $doctorId;
         $this->start = $start;
-        $this->setEnd($end);
+        $this->end = $end;
+        $this->createdAt = new DateTime();
     }
 
     public function getStart(): DateTime
@@ -51,23 +52,15 @@ final class Slot
         return $this->start;
     }
 
-    public function tryUpdateEnd(DateTime $end): void
-    {
-        if ($this->isStale()) {
-            $this->setEnd($end);
-        }
-    }
-
-    private function isStale(): bool
-    {
-        return $this->updatedAt < new DateTime('5 minutes ago');
-    }
-
-    private function setEnd(DateTime $end): self
+    public function setEnd(DateTime $end): self
     {
         $this->end = $end;
-        $this->updatedAt = new DateTime();
 
         return $this;
+    }
+
+    public function isStale(): bool
+    {
+        return $this->createdAt < new DateTime('5 minutes ago');
     }
 }
