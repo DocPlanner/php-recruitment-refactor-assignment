@@ -1,6 +1,7 @@
-FROM php:8.1-cli
+FROM alpine:3.15
 
 WORKDIR /app
-
+COPY bin/ bin/
+COPY docker/entrypoint.sh entrypoint.sh
 EXPOSE 2137
-CMD bash -c "bin/VendorApi_linux"
+ENTRYPOINT /app/entrypoint.sh
