@@ -14,7 +14,7 @@ use Monolog\Logger;
 
 class DoctorSlotsSynchronizer
 {
-    protected const ENDPOINT = 'https://cryptic-cove-05648.herokuapp.com/api/doctors';
+    protected const ENDPOINT = 'http://localhost:2137/api/doctors';
     protected const USERNAME = 'docplanner';
     protected const PASSWORD = 'docplanner';
 

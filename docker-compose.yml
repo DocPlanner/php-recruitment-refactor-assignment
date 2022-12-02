@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  unit-testing-challenge:
+    container_name: unit-testing-challenge
+    build:
+      context: ./
+      dockerfile: docker/Dockerfile
+    #    restart: on-failure
+    volumes:
+      - ./:/app
+    ports:
+      - '2137:2137'
