@@ -11,7 +11,7 @@ The aim is to use unit testing, but if you’d like to propose a solution using 
 
 ## Time constraints
 
-It should take between 2 and 4 hours to complete this challenge, depending on your pace. We will not measure your time, it's only for your information, so you can estimate the required effort.
+We will not measure your time, so it's up to you to decide on how much you need. However, please don't invest too much time and effort.
 
 ## Installation
 The project is dockerized and configured to work with `docker-compose`.
