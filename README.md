@@ -11,7 +11,7 @@ The aim is to use unit testing, but if you’d like to propose a solution using 
 
 ## Time constraints
 
-We will not measure your time, so it's up to you to decide on how much you need. However, please don't invest too much time and effort.
+We will not measure your time, so it's up to you to decide on how much time you need. However, please don't invest too much effort.
 
 ## Installation
 The project is dockerized and configured to work with `docker-compose`.
