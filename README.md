@@ -3,7 +3,7 @@
 
 ## The task
 
-Please look at [`src/DoctorSlotsSynchronizer.php`](src/DoctorSlotsSynchronizer.php). Add unit tests using your favourite framework to test its business responsibilities. **Feel free to refactor any part of the code as you see fit.**
+Please look at [`src/DoctorSlotsSynchronizer.php`](src/DoctorSlotsSynchronizer.php). Add unit tests using your favourite framework to test its business responsibilities. **Feel free to refactor any part of the code as you see fit. Please, show us your skills. **
 
 The business requirements are not given, you need to reverse-engineer them from the code. There are no hidden bugs (as far as we know), you don’t have to focus on fixing the behaviour, but rather on proving using unit tests that it is correct.
 
