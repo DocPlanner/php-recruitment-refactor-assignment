@@ -18,4 +18,4 @@ After a while, the vendor API serving doctors will be accessible on `http://loca
 ## Hints
 
 - It’s up to you to decide on how much time you will spend. However, please don’t invest too much effort.
-- Feel free to ask questions if you have any doubts or something is unclear.
+- If you have any issue or something is unclear, don't hesitate to ask
