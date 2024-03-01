@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  unit-testing-api:
+    container_name: unit-testing-api
+    build:
+      context: ./
+      dockerfile: docker/Dockerfile
+    ports:
+      - '2137:2137'
