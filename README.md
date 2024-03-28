@@ -1,7 +1,18 @@
 # Refactoring & unit testing challenge
 
+## How to use this repsitory and complete the assignment
+Hello! First of all - welcome and congrats that we can meet on this stage of the process! 
 
-## The task
+Below you will find the home assignment we prepared for you. Some guidelines:
+1. To create your copy, Use the green "Use this template" button on the top right. It should be set as private repo. Do not use Fork feature.
+2. Complete the task as described below.
+3. When done, give access to the repo to the hiring manager and other people provided.
+4. Send us the link to the repo, so we can review your work.
+
+Good luck!
+
+
+## Task description
 
 Please look at [`src/DoctorSlotsSynchronizer.php`](src/DoctorSlotsSynchronizer.php). Refactor the code preserving the functionality and add unit tests using your favourite framework.
 
