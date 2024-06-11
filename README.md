@@ -7,7 +7,7 @@ Below you will find the home assignment we prepared for you. Some guidelines:
 1. To create your copy, Use the green "Use this template" button on the top right. It should be set as private repo. Do not use Fork feature.
 2. Complete the task as described below.
 3. When done, give access to the repo to the hiring manager and other people provided.
-4. Send us the link to the repo, so we can review your work.
+4. Send us the link to the PULL REQUEST in your repo, so we can review your work. 
 
 Good luck!
 
