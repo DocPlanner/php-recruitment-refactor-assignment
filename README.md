@@ -31,5 +31,5 @@ After a while, the vendor API serving doctors will be accessible on `http://loca
 - Show us your skills.
 - Remember to write tests that test business logic, not implementation.
 - It's up to you how much time you want to spend.
-- If you could do something better, but it's too much work, please put a comment what you would improve.
+- If you could do something better, but it's too much work, please put a comment on what you would improve.
 - If something is unclear, don't hesitate to ask.
