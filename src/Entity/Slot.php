@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace App\Entity;
@@ -7,44 +8,60 @@ use DateTime;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity
- * @ORM\Table(name="slot")
+ * @ORM\Entity()
+ * @ORM\Table(name="slots")
+ * @ORM\HasLifecycleCallbacks()
  */
-final class Slot
+class Slot
 {
     /**
      * @ORM\Id
-     * @ORM\GeneratedValue(strategy="AUTO")
      * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue()
      */
-    private string $id;
+    private int $id;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\ManyToOne(targetEntity="Doctor", inversedBy="slots")
+     * @ORM\JoinColumn(name="doctor_id", referencedColumnName="id", nullable=false)
      */
-    private int $doctorId;
+    private Doctor $doctor;
 
-    /**
-     * @ORM\Column(type="datetime")
-     */
+    /** @ORM\Column(type="datetime") */
     private DateTime $start;
 
-    /**
-     * @ORM\Column(type="datetime")
-     */
+    /** @ORM\Column(type="datetime") */
     private DateTime $end;
 
-    /**
-     * @ORM\Column(type="datetime")
-     */
+    /** @ORM\Column(type="datetime") */
     private DateTime $createdAt;
 
-    public function __construct(int $doctorId, DateTime $start, DateTime $end)
+    public function __construct(Doctor $doctor, DateTime $start, DateTime $end)
     {
-        $this->doctorId = $doctorId;
+        $this->doctor = $doctor;
         $this->start = $start;
         $this->end = $end;
         $this->createdAt = new DateTime();
+    }
+
+    public function getId(): ?int
+    {
+        return $this->id ?? null;
+    }
+
+    public function setDoctor(Doctor $doctor): void
+    {
+        $this->doctor = $doctor;
+    }
+
+    public function getDoctor(): Doctor
+    {
+        return $this->doctor;
+    }
+
+    public function setStart(DateTime $start): void
+    {
+        $this->start = $start;
     }
 
     public function getStart(): DateTime
@@ -52,15 +69,34 @@ final class Slot
         return $this->start;
     }
 
-    public function setEnd(DateTime $end): self
+    public function setEnd(DateTime $end): void
     {
         $this->end = $end;
+    }
 
-        return $this;
+    public function getEnd(): DateTime
+    {
+        return $this->end;
+    }
+
+    /**
+     * @ORM\PrePersist()
+     */
+    public function onPrePersist(): void
+    {
+        $this->createdAt = new DateTime();
+    }
+
+    public function getCreatedAt(): DateTime
+    {
+        return $this->createdAt;
     }
 
     public function isStale(): bool
     {
-        return $this->createdAt < new DateTime('5 minutes ago');
+        $now = new DateTime();
+        $interval = $now->getTimestamp() - $this->createdAt->getTimestamp();
+
+        return $interval > 300; // 300 segundos = 5 minutos
     }
 }

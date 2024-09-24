@@ -7,36 +7,43 @@ namespace App\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity
- * @ORM\Table(name="doctor")
+ * @ORM\Entity()
+ * @ORM\Table(name="doctors")
  */
-final class Doctor
+class Doctor
 {
     /**
      * @ORM\Id
      * @ORM\Column(type="integer")
      */
-    private string $id;
+    private int $id;
 
-    /**
-     * @ORM\Column(type="string")
-     */
+    /** @ORM\Column(type="string", length=255) */
     private string $name;
 
-    /**
-     * @ORM\Column(type="boolean")
-     */
-    private bool $error = false;
+    /** @ORM\Column(type="boolean") */
+    private bool $hasError = false;
 
-    public function __construct(string $id, string $name)
+    /**
+     * @ORM\OneToMany(targetEntity="Slot", mappedBy="doctor", cascade={"persist", "remove"})
+     */
+    private $slots;
+
+    public function __construct(int $id, string $name)
     {
         $this->id = $id;
         $this->name = $name;
+        $this->slots = new \Doctrine\Common\Collections\ArrayCollection();
     }
 
-    public function getId(): string
+    public function getId(): int
     {
         return $this->id;
+    }
+
+    public function setName(string $name): void
+    {
+        $this->name = $name;
     }
 
     public function getName(): string
@@ -46,22 +53,27 @@ final class Doctor
 
     public function markError(): void
     {
-        $this->error = true;
+        $this->hasError = true;
     }
 
     public function clearError(): void
     {
-        $this->error = false;
+        $this->hasError = false;
     }
 
     public function hasError(): bool
     {
-        return $this->error;
+        return $this->hasError;
     }
 
-    public function setName(string $name): self
+    public function addSlot(Slot $slot): void
     {
-        $this->name = $name;
-        return $this;
+        $this->slots[] = $slot;
+        $slot->setDoctor($this);
+    }
+
+    public function getSlots()
+    {
+        return $this->slots;
     }
 }
