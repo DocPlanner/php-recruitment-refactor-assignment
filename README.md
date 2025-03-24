@@ -1,35 +1,53 @@
 # Refactoring & unit testing challenge
 
-## How to use this repsitory and complete the assignment
-Hello! First of all - welcome and congrats that we can meet on this stage of the process! 
+## How to use this repository and complete the assignment
+We're excited to have you at this stage of the recruitment process — and we're looking forward to seeing how you think
+and approach complex problems.
 
-Below you will find the home assignment we prepared for you. Some guidelines:
-1. To create your copy, Use the green "Use this template" button on the top right. It should be set as private repo. Do not use Fork feature.
-2. Complete the task as described below.
-3. When done, give access to the repo to the hiring manager and other people provided.
-4. Send us the link to the PULL REQUEST in your repo, so we can review your work. 
+This task is designed not only to evaluate your ability to write clean and testable code, but more importantly 
+to **understand your approach to software design, architecture, and testing at a senior level.**
 
-Good luck!
+## What we're looking for?
+This exercise will give you space to demonstrate:
 
+- Proficiency in refactoring legacy or procedural code into clean, maintainable OOP components.
+- Strong understanding and application of SOLID principles.
+- Use of appropriate design patterns where they add clarity and value.
+- Awareness of domain-driven design and separation of concerns. 
+- A pragmatic but thoughtful approach to unit testing and testability. 
+- Clear, developer-friendly communication — whether it's through code, structure, or comments.
+- Being up to date with PHP language development and its features.
 
 ## Task description
+Please look at [`src/DoctorSlotsSynchronizer.php`](src/DoctorSlotsSynchronizer.php). 
+Your goal is to:
+Understand the business logic based solely on the existing code.
 
-Please look at [`src/DoctorSlotsSynchronizer.php`](src/DoctorSlotsSynchronizer.php). Add unit tests using your favourite framework to test its business logic. Refactor any part of the code if you find it useful for architectural and testing purposes.
+- Refactor the class to make it easier to test, reason about, and maintain. Think in terms of architecture, 
+modularity, and clarity.
+- Write unit tests for the extracted/refactored business logic using your preferred PHP testing framework.
+- If you see opportunities for improvements that go beyond the scope of the task, feel free to:
+  - Add them.
+  - Or simply leave comments describing your suggestions and reasoning
 
-The business requirements are not given, you need to reverse-engineer them from the code. There are no hidden bugs (as far as we know), you don't have to focus on fixing the behaviour, but rather on refactoring the code and proving using unit tests that it is correct.
+We will very much appreciate comments about why you've chosen certain solutions!
 
-The aim is to use unit testing, but if you'd like to propose a solution, we're curious about it as well.
+### Additional Notes & Tips
+- You decide how much time you want to spend — quality over quantity is key.
+- If something could be improved but would take too long, just leave a comment or TODO.
+- If anything is unclear, don’t hesitate to reach out — asking good questions is a good sign.
+
+## How to use this repository?
+- To create your copy, 
+  - Use the green "Use this template" button on the top right. It should be set as private repo. 
+  -  Do not use Fork feature.
+- Complete the task as described above.
+- When done, give access to the repo to the hiring manager and other people provided.
+- Send us the link to the PULL REQUEST **in your repo**, so we can review your work.
 
 ## Installation
 Only the vendor API is dockerized and configured to work with `docker-compose`. However, feel free to dockerize the rest of the project if you find it helpful.
-
 To run the container, use `docker-compose up -d`.
 After a while, the vendor API serving doctors will be accessible on `http://localhost:2137`.
 
-## Hints
-
-- Show us your skills.
-- Remember to write tests that test business logic, not implementation.
-- It's up to you how much time you want to spend.
-- If you could do something better, but it's too much work, please put a comment on what you would improve.
-- If something is unclear, don't hesitate to ask.
+## Good luck!
