@@ -1,6 +1,6 @@
 # Refactoring & unit testing challenge
 
-## How to use this repository and complete the assignment
+## It's great you're here!
 We're excited to have you at this stage of the recruitment process — and we're looking forward to seeing how you think
 and approach complex problems.
 
