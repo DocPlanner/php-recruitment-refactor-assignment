@@ -35,7 +35,7 @@ We will very much appreciate comments about why you've chosen certain solutions!
 ### Additional Notes & Tips
 - You decide how much time you want to spend — quality over quantity is key.
 - If something could be improved but would take too long, just leave a comment or TODO.
-- If anything is unclear, don’t hesitate to reach out — asking good questions is a good sign.
+- If anything is unclear, don’t hesitate to reach out — asking questions is a good sign.
 
 ## How to use this repository?
 - To create your copy, 
