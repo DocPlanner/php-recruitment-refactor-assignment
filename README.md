@@ -27,7 +27,7 @@ Understand the business logic based solely on the existing code.
 modularity, and clarity.
 - Write unit tests for the extracted/refactored business logic using your preferred PHP testing framework.
 - If you see opportunities for improvements that go beyond the scope of the task, feel free to:
-  - Add them.
+  - Add them
   - Or simply leave comments describing your suggestions and reasoning
 
 We will very much appreciate comments about why you've chosen certain solutions!
