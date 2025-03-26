@@ -40,7 +40,7 @@ We will very much appreciate comments about why you've chosen certain solutions!
 ## How to use this repository?
 - To create your copy, 
   - Use the green "Use this template" button on the top right. It should be set as private repo. 
-  -  Do not use Fork feature.
+  - Do not use the Fork feature.
 - Complete the task as described above.
 - When done, give access to the repo to the hiring manager and other people provided.
 - Send us the link to the PULL REQUEST **in your repo**, so we can review your work.
