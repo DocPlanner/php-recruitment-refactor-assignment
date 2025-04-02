@@ -8,31 +8,37 @@ This task is designed not only to evaluate your ability to write clean and testa
 to **understand your approach to software design, architecture, and testing at a senior level.**
 
 ## What we're looking for?
+We're looking for a Senior developer who is able to work closely with business and understand the business logic and 
+purpose behind it.
+
 This exercise will give you space to demonstrate:
 
 - Proficiency in refactoring legacy or procedural code into clean, maintainable OOP components.
+- Your ability to deeply understand and translate complex business requirements into well-structured, maintainable, 
+  and valuable software solutions.
 - Strong understanding and application of SOLID principles.
 - Use of appropriate design patterns where they add clarity and value.
-- Awareness of domain-driven design and separation of concerns. 
-- A pragmatic but thoughtful approach to unit testing and testability. 
-- Clear, developer-friendly communication — whether it's through code, structure, or comments.
+-  Awareness and thoughtful application of Domain-Driven Design (DDD) principles, clearly separating technical 
+   concerns while maintaining deep business insight.
+- A pragmatic yet rigorous approach to unit testing, emphasizing the testability of business-critical components.
+- Clear, developer-friendly communication—whether through your code structure, naming conventions, or thoughtful commentary
 - Being up to date with PHP language development and its features.
 
 ## Task description
 Please look at [`src/DoctorSlotsSynchronizer.php`](src/DoctorSlotsSynchronizer.php). 
 Your goal is to:
-Understand the business logic based solely on the existing code.
-
+- Clearly articulate and understand the existing business logic purely from the provided code.
 - Refactor the class to make it easier to test, reason about, and maintain. Think in terms of architecture, 
 modularity, and clarity.
 - Write unit tests for the extracted/refactored business logic using your preferred PHP testing framework.
 - If you see opportunities for improvements that go beyond the scope of the task, feel free to:
-  - Add them.
+  - Implement these improvements directly.
   - Or simply leave comments describing your suggestions and reasoning
 
 We will very much appreciate comments about why you've chosen certain solutions!
 
 ### Additional Notes & Tips
+- Focus on demonstrating clarity and business-driven quality over quantity.
 - You decide how much time you want to spend — quality over quantity is key.
 - If something could be improved but would take too long, just leave a comment or TODO.
 - If anything is unclear, don’t hesitate to reach out — asking good questions is a good sign.
