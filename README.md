@@ -32,7 +32,7 @@ Your goal is to:
 modularity, and clarity.
 - Write unit tests for the extracted/refactored business logic using your preferred PHP testing framework.
 - If you see opportunities for improvements that go beyond the scope of the task, feel free to:
-  - Implement these improvements directly.
+  - Add them.
   - Or simply leave comments describing your suggestions and reasoning
 
 We will very much appreciate comments about why you've chosen certain solutions!
@@ -41,12 +41,12 @@ We will very much appreciate comments about why you've chosen certain solutions!
 - Focus on demonstrating clarity and business-driven quality over quantity.
 - You decide how much time you want to spend — quality over quantity is key.
 - If something could be improved but would take too long, just leave a comment or TODO.
-- If anything is unclear, don’t hesitate to reach out — asking good questions is a good sign.
+- If anything is unclear, don’t hesitate to reach out — asking questions is a good sign.
 
 ## How to use this repository?
 - To create your copy, 
   - Use the green "Use this template" button on the top right. It should be set as private repo. 
-  -  Do not use Fork feature.
+  - Do not use the Fork feature.
 - Complete the task as described above.
 - When done, give access to the repo to the hiring manager and other people provided.
 - Send us the link to the PULL REQUEST **in your repo**, so we can review your work.
