@@ -18,7 +18,7 @@ This exercise will give you space to demonstrate:
   and valuable software solutions.
 - Strong understanding and application of SOLID principles.
 - Use of appropriate design patterns where they add clarity and value.
--  Awareness and thoughtful application of Domain-Driven Design (DDD) principles, clearly separating technical 
+Awareness and thoughtful application of modern software architecture principles, clearly separating technical 
    concerns while maintaining deep business insight.
 - A pragmatic yet rigorous approach to unit testing, emphasizing the testability of business-critical components.
 - Clear, developer-friendly communication—whether through your code structure, naming conventions, or thoughtful commentary
@@ -26,6 +26,7 @@ This exercise will give you space to demonstrate:
 
 ## Task description
 Please look at [`src/DoctorSlotsSynchronizer.php`](src/DoctorSlotsSynchronizer.php). 
+
 Your goal is to:
 - Clearly articulate and understand the existing business logic purely from the provided code.
 - Refactor the class to make it easier to test, reason about, and maintain. Think in terms of architecture, 
@@ -34,6 +35,7 @@ modularity, and clarity.
 - If you see opportunities for improvements that go beyond the scope of the task, feel free to:
   - Add them.
   - Or simply leave comments describing your suggestions and reasoning
+- Remember to write tests that test business logic, not implementation.
 
 We will very much appreciate comments about why you've chosen certain solutions!
 
