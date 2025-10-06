@@ -31,7 +31,7 @@ Your goal is to:
 - Clearly articulate and understand the existing business logic purely from the provided code.
 - Refactor the class to make it easier to test, reason about, and maintain. Think in terms of architecture, 
 modularity, and clarity.
-- Write unit tests for the extracted/refactored business logic using your preferred PHP testing framework.
+- Write tests for the extracted/refactored business logic using your preferred PHP testing framework.
 - If you see opportunities for improvements that go beyond the scope of the task, feel free to:
   - Add them, but please remember to keep your changes minimal.
   - Or simply leave comments describing your suggestions and reasoning. It's the preferred way.
