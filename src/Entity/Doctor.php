@@ -14,7 +14,7 @@ final class Doctor
 {
     /**
      * @ORM\Id
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="string", length=50)
      */
     private string $id;
 
