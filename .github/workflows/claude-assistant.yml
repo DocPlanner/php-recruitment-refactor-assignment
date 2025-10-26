@@ -1,0 +1,45 @@
+name: Claude AI Assistant
+
+on:
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  claude-assistant:
+    name: Claude Assistant
+    runs-on: self-hosted
+
+    # Only run on PR comments containing @claude
+    if: |
+      github.event_name == 'issue_comment' &&
+      github.event.issue.pull_request &&
+      contains(github.event.comment.body, '@claude')
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Run Claude Code
+        uses: anthropics/claude-code-action@v1
+        with:
+          prompt_file: ai-review-prompt.md
+          use_sticky_comment: true
+          track_progress: true
+          claude_args: |
+            --max-turns 15
+            --model claude-sonnet-4-5
+            --allowedTools mcp__github_inline_comment__create_inline_comment
+        continue-on-error: true
+
+      - name: Usage Summary
+        if: always()
+        run: |
+          echo "✅ Claude Assistant completed"
+          echo "   PR: #${{ github.event.issue.number }}"
+          echo "   Trigger: @claude comment"
