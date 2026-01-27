@@ -1,14 +1,13 @@
-# Refactoring & Architecture Challenge - Extended Edition
+# Refactoring & Architecture Challenge
 
 ## It's great you're here!
 We're excited to have you at this stage of the recruitment process — and we're looking forward to seeing how you think
 and approach complex problems.
 
-This **extended** task is designed to evaluate your ability to work with AI-assisted development tools (like Cursor) 
+This task is designed to evaluate your ability to work with AI-assisted development tools (like Cursor) 
 while demonstrating senior-level skills in software design, architecture, testing, and business understanding.
 
-**Note:** This is an extended version of our standard exercise. You have more time and we expect a more comprehensive 
-solution. We encourage you to use AI tools (Cursor, GitHub Copilot, etc.) as you would in your daily work — but remember, 
+We encourage you to use AI tools (Cursor, GitHub Copilot, etc.) as you would in your daily work — but remember, 
 the quality of your architectural decisions and understanding of the business logic is what we're evaluating.
 
 ## What we're looking for?
@@ -146,7 +145,7 @@ We'll evaluate:
   - Refactor and improve AI suggestions when needed
   - Document why you made certain choices
 
-- **Time Management**: You have more time for this extended version. Focus on:
+- **Time Management**: Focus on:
   - Quality over quantity
   - Clear architecture over quick hacks
   - Understanding trade-offs
